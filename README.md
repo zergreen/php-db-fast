@@ -1,6 +1,9 @@
 # php-db-fast
 เกี่ยวกับการเชื่อมต่อ database ด้วย php
 
+# คำเตือน
+ต้องมี database ชื่อ <i>mix_db.sql</i> ก่อนนะ แล้วก็ใน my_db ต้อง มี table ด้วย ซึ่ง scrpit การสร้าง table จะอยู่ใน <b>mix_db.sql</b>
+
 # info
 .txt ไม่ใช้ เอาไว้อ่านเล่น <br>
 
