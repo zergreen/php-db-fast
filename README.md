@@ -8,6 +8,7 @@
 - ex36 => [ex36.php,mix_db.sql]
 - ex40 => [ex40.php,Select_Form.html,Select_Form.php,mix_db.sql]
 - ex41 => [ex41.php,Insert_Form.html,Insert_Form.php]
+- ex42 => [ex42.php,Update_Form.html,Update_Form.php]
 
 # screenshot
 ถ้ารันโค้ดแล้วผ่านก็จะขึ้นแบบนี้ <br>
