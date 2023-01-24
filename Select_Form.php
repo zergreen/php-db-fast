@@ -18,8 +18,8 @@
 
 <?php
 $servername = "localhost";
-$username = "admin";
-$password = "admin1234";
+$username = "root";
+$password = "";
 $dbname = "my_db";
 
 // Create connection
