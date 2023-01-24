@@ -17,7 +17,7 @@ $sql = "UPDATE Customers SET custname='$_POST[a2]', sex='$_POST[a3]', address='$
 
 try {
     $result = $conn->query($sql);
-    echo "Insert: data = <font color=red> '$_POST[a1]' </font> is Successful. <br>";
+    echo "UPDATE: data = <font color=red> '$_POST[a1]' </font> is Successful. <br>";
 } catch (Exception $e){
     echo "Error: insert <font color=red> '$_POST[a1]' </font> to database <br>";
 }
