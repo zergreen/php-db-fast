@@ -1,4 +1,4 @@
 <?php
-$newURL = "Select_Form.html";
+$newURL = "Insert_Form.html";
 header('Location: '.$newURL);
 ?>
