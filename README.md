@@ -13,10 +13,8 @@
 
 # screenshot
 ถ้ารันโค้ดแล้วผ่านก็จะขึ้นแบบนี้ <br>
+http://localhost/database/
 ![index.png](https://cdn.discordapp.com/attachments/1067458504014708767/1067546855082311770/index.png)
-<details>
-<summary>Click: See More!</summary>
 ![ex36.png](https://cdn.discordapp.com/attachments/1067458504014708767/1067458704603091055/ex36.png)
 ![delete.png](https://cdn.discordapp.com/attachments/1067458504014708767/1067547211212267571/delete.png)
 ![list.png](https://cdn.discordapp.com/attachments/1067458504014708767/1067547211723964507/list.png)
-</details>
