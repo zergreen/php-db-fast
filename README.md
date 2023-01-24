@@ -6,7 +6,7 @@
 
 ที่ใช้ในงานก็มี <br>
 - ex36 => [ex36.php,mix_db.sql]
-- ex40 => [ex40.php,Select_Form.html,Select_Form.php]
+- ex40 => [ex40.php,Select_Form.html,Select_Form.php,mix_db.sql]
 
 # screenshot
 ถ้ารันโค้ดแล้วผ่านก็จะขึ้นแบบนี้ <br>
