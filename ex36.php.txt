@@ -1,0 +1,19 @@
+<?php 
+    // $msconnect = mssql_connect("172.16.20.81:1433","sa","");
+
+    $msconnect = mssql_connect("localhost","root","admin1234");
+
+    $msdb = mssql_db("my_db",$msconnect);
+
+    $msquery = "SELECT fname, lname FROM Employees";
+    
+    $msresults = mssql_query($msquery);
+
+    echo "EX-36 : Connect to mysql database \n";
+
+    echo "<ol>";
+    while ($row = mssql_fetch_array($msresults)){
+        echo "<li>".$row['fname']." ".$row['lname']. "\n";
+    }
+    echo "</ol>";
+?>

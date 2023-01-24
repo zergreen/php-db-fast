@@ -1,0 +1,17 @@
+<?php 
+
+    //odbc style
+    
+    $conn = odbc_connect("my_db","root","admin1234");
+
+    $sql = "INSERT INTO Customer(idcust, custname, sex, address, tel)
+    VALUES('63050159', 'Green', 'M', 'Ladkrabang', '089-xxx-xxxx');";
+    
+    $stmt = odbc_prepare($conn, $sql);
+
+    odbc_execute($stmt);
+
+    // คำสั่งเดียวจบ
+    // odbc_execute($conn, "INSERT INTO Customer(idcust, custname, sex, address, tel)
+    // VALUES('63050159', 'Green', 'M', 'Ladkrabang', '089-xxx-xxxx');");
+?>
