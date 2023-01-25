@@ -16,7 +16,7 @@ home : http://localhost/php-db-fast/
 - ex43 => [ex43.php,Delete_Form.html,Delete_Form.php]
 
 lab <br>
-- 26/01/2023 => [Get_One.html, List.php, Verify_Delete.php,checkbox-form.php]
+- 26/01/2023 => [Get_One.html, List.php, Verify_Delete.php,checkbox-form.php, conn/conn.php]
 
 # screenshot
 ถ้ารันโค้ดแล้วผ่านก็จะขึ้นแบบนี้ <br>
