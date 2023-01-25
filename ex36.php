@@ -1,24 +1,23 @@
-<?php
-$servername = "localhost";
-$username = "admin";
-$password = "admin1234";
-$dbname = "my_db";
+<html>
+  <table border=1>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+    </tr>
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
-echo "Connected successfully <br>";
+  <?php
+include "conn/conn.php";
 
 $sql = "SELECT employeeid, fname, lname FROM Employees";
 $result = $conn->query($sql);
 
+
 while($row = $result->fetch_assoc()) {
-  echo "ID: " . $row["employeeid"]. " - Name: " . $row["fname"]. " " . $row["lname"]. "<br>";
+  echo "<tr> <td>" . $row["employeeid"]. "<td>" . $row["fname"]. " " . $row["lname"];
 }
 
 $conn->close();
 ?>
+
+  </table>
+</html>

@@ -13,13 +13,17 @@ if ($conn->connect_error) {
 
 echo "Connected successfully <br>";
 
-$sql = "DELETE FROM Customers WHERE idcust='$_POST[a1]'";
+$id = $_GET['id'];
+
+echo "id : $id";
+
+$sql = "DELETE FROM Customers WHERE idcust='$_GET[id]'";
 
 try {
     $result = $conn->query($sql);
-    echo "DELETE: data = <font color=red> '$_POST[a1]' </font> is Successful. <br>";
+    echo "DELETE: data = <font color=red> '$_GET[id]' </font> is Successful. <br>";
 } catch (Exception $e){
-    echo "Error: DELETE <font color=red> '$_POST[a1]' </font> to database <br>";
+    echo "Error: DELETE <font color=red> '$_GET[id]' </font> to database <br>";
 }
 
 // check for error

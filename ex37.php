@@ -1,4 +1,4 @@
 <?php
-$newURL = "Update_Form.html?";
+$newURL = "Login.php";
 header('Location: '.$newURL);
 ?>
