@@ -25,17 +25,17 @@
             <h1>Customer - Product List&#128220;</h1>
             <hr class="hr">
         </center>
-        <form action="" method="POST">
-            <div class="d-flex justify-content-end"><input type="submit" value="ADD"></div> <br>
+        <form action="DELETE.php" method="POST">
+            <div class="d-flex justify-content-end"> <?php echo " <input type=button onclick=location.href='ADD.php?id=$_POST[id]' value=ADD > "; ?></div><br>
 
             <table class="table table-hover table-bordered table-striped text-center">
-                <caption>รายการรวมสินค้าของลูกค้า - <?php echo "$_POST[id]"; ?> </caption>
+                <caption>รายการรวมสินค้าของลูกค้า - รหัสลูกค้า <?php echo "$_POST[id]"; ?> </caption>
                 <thead class="table-dark">
                     <th>#</th>
-                    <th>PName</th>
-                    <th>PricePerUnit</th>
-                    <th>Qty</th>
-                    <th>Stock</th>
+                    <th>ชื่อสินค้า</th>
+                    <th>ราคา/หน่วย</th>
+                    <th>จำนวน</th>
+                    <th>QtyStock</th>
                 </thead>
                 <tbody>
                     <?php
@@ -65,22 +65,16 @@
                 </tbody>
             </table>
 
-            <!-- <div class="d-flex flex-row-reverse bd-highlight">
-                <div class="p-2 bd-highlight"><input type="submit" value="DELETE"></div>
-                <div class="p-2 bd-highlight"><input type="reset" value="RESET"></div>
-                <div class="p-2 bd-highlight"><input type="submit" value="UPDATE"></div>
-            </div> -->
-
             <div class="d-flex bd-highlight">
-                <div class="p-2 flex-grow-1 bd-highlight"><input type="submit" value="DELETE"></div>
+                <div class="p-2 flex-grow-1 bd-highlight"><input type="button" onclick="history.back()" value="BACK"></div>
                 <div class="p-2 bd-highlight"><input type="reset" value="RESET"></div>
                 <div class="p-2 bd-highlight"><input type="submit" value="UPDATE"></div>
+                <div class="p-2 bd-highlight"><input type="submit" value="DELETE"></div>
             </div>
 
         </form>
 
         <br>
-
 
         <div class="card">
             <div class="card-header">
@@ -94,6 +88,7 @@
                         <li>ADD : ไปที่หน้าเพิ่มสินค้า</li>
                         <li>UPDATE : เพิ่ม-ลด สินค้า [Qty] ในหน้าปัจจุบัน</li>
                         <li>DELETE : คลิกที่ช่อง # เพื่อเลือก สินค้าที่ต้องการลบ</li>
+                        <li>RESET : ล้าง field</li>
                     </ul>
                     <footer class="blockquote-footer">Contact to <cite title="Source Title">63050159 Phongsakorn Kawhaolai</cite> for more information</footer>
                 </blockquote>

@@ -6,15 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CUSTOMER-LOGIN</title>
 </head>
-<body>
+<body bgcolor='#FFFBF5'>
    <center><h1>Customer-ID</h1><hr color="red">
        </center>
-       <p>กรอกเลข ID ของลูกค้า เพื่อดูข้อมูลเพิ่มเติม</p>
+      <center>
+        <h1 style="color: red;">
+        <p>กรอกรหัสของลูกค้า เพื่อดูข้อมูลเพิ่มเติม</p>
        <form action="READ.php" method="POST">
             <input type="text" value="c001" name="id">
             <br>
             <input type="submit" value="Search">
             <input type="reset" value="Reset">
         </form>
+        </h1>
+        <img src="https://media.tenor.com/hRiPtsp-m0IAAAAM/the-simpsons-homer-simpson.gif" alt="">
+      </center>
 </body>
 </html>

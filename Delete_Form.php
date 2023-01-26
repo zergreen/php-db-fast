@@ -33,5 +33,5 @@ $conn->close();
 
 <html>
 <button onclick="history.back()">Go Back</button>
-<input type="button" onclick="location.href='Customer_List.php';" value="See List" />
+<input type="button" onclick="location.href='Customer_List.php'" value="See List" />
 </html>
