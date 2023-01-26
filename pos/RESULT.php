@@ -32,7 +32,6 @@
                 <caption>ผลลัพธ์ของคำสั่งซื้อ - รหัสลูกค้า <?php echo "$_POST[custid]"; ?> </caption>
                 <thead class="table-dark">
                     <th>#</th>
-                    <th>P-Id</th>
                     <th>PName</th>
                     <th>PricePerUnit</th>
                     <th>StockQty</th>
@@ -60,7 +59,6 @@
                         echo "
                             <tr>
                             <td>$i
-                            <td>$row[IDProduct]
                             <td>$row[ProductName]
                             <td>$row[PricePerUnit]
                             <td><input type=number value=$row[StockQty] step=10 min=0 max=9999>
