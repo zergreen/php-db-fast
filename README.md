@@ -21,6 +21,9 @@ lab <br>
 # screenshot
 ถ้ารันโค้ดแล้วผ่านก็จะขึ้นแบบนี้ <br>
 http://localhost/php-db-fast/
+![list.png](https://cdn.discordapp.com/attachments/1067458504014708767/1068172805423767592/list.png)
+![checkbox-delete](https://cdn.discordapp.com/attachments/1067458504014708767/1068172806015160460/checkbox-delete.png)
+![delete-success](https://cdn.discordapp.com/attachments/1067458504014708767/1068172806245855242/delete-success.png)
 ![index.png](https://cdn.discordapp.com/attachments/1067458504014708767/1067546855082311770/index.png)
 ![ex36.png](https://cdn.discordapp.com/attachments/1067458504014708767/1067458704603091055/ex36.png)
 ![delete.png](https://cdn.discordapp.com/attachments/1067458504014708767/1067547211212267571/delete.png)
