@@ -19,6 +19,18 @@ home : http://localhost/php-db-fast/
 lab <br>
 - 26/01/2023 => [Get_One.html, List.php, Verify_Delete.php,checkbox-form.php, conn/conn.php]
 
+homework <br>
+- POS => [รวมอยู่ใน directory pos, การทำงานเริ่มที่ home.php]
+
+# POS
+งาน POS (ยังไม่เสร็จ) <br>
+http://localhost/php-db-fast/pos - Demo
+![frame](https://cdn.discordapp.com/attachments/1067458504014708767/1068272044720017490/frame.png)
+![READ](https://cdn.discordapp.com/attachments/1067458504014708767/1068272044954894426/READ.png)
+![ADD](https://cdn.discordapp.com/attachments/1067458504014708767/1068272045160403096/ADD.png)
+![VERIFY](https://cdn.discordapp.com/attachments/1067458504014708767/1068272045382717520/VERIFY.png)
+![RESULT](https://cdn.discordapp.com/attachments/1067458504014708767/1068272045609205860/RESULT.png)
+
 # screenshot
 ถ้ารันโค้ดแล้วผ่านก็จะขึ้นแบบนี้ <br>
 http://localhost/php-db-fast/
