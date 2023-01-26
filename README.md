@@ -2,7 +2,8 @@
 เกี่ยวกับการเชื่อมต่อ database ด้วย php
 
 # คำเตือน
-ต้องมี database ชื่อ <i>mix_db</i> ก่อนนะ แล้วก็ใน my_db ต้อง มี table ด้วย ซึ่ง scrpit การสร้าง table จะอยู่ใน <b>mix_db.sql</b>
+ต้องมี database ชื่อ <i>my_db</i> ก่อนนะ แล้วก็ใน my_db ต้อง มี table ด้วย ซึ่ง scrpit การสร้าง table จะอยู่ใน <b>mix_db.sql</b> <br>
+ระวังเรื่อง port ชนด้วย ซึ่งบางครั้งต้องใส่ port ที่ endpoint เชื่อม database ด้วย [localhost:3307]
 
 # info
 .txt ไม่ใช้ เอาไว้อ่านเล่น <br>
