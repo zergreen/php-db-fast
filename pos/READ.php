@@ -44,17 +44,22 @@
 
                     include "../conn/conn.php";
 
-                    $sql = " SELECT * FROM Supplys WHERE  IDCust='$id' ";
+                    $sql1 = " SELECT * FROM Supplys WHERE  IDCust='$id' ";
+
+                    $sql = "  SELECT s.ProductName, s.PricePerUnit , s.StockQty, sup.Qty FROM Stocks AS s
+                    INNER JOIN Supplys AS sup ON s.IDProduct=sup.IDProduct 
+                    WHERE sup.IDCust='$id' ";
 
                     $result = $conn->query($sql);
 
                     while ($row = $result->fetch_assoc()) {
                         echo "
                             <tr>
-                            <td><input type=checkbox name=ids[] value=$row[IDCust] >
-                            <td>$row[IDCust]
-                            <td>$row[IDProduct]
+                            <td><input type=checkbox name=ids[] value=$row[ProductName] >
+                            <td>$row[ProductName]
+                            <td>$row[PricePerUnit]
                             <td><input type=number value=$row[Qty] step=10 min=0 max=9999>
+                            <td>$row[StockQty]
                             </tr>
                             ";
                     }
