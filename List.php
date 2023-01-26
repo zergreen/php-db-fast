@@ -18,8 +18,10 @@
 <body>
 
   <div class="container">
+    <center><h1>Customer Details&#128100;</h1> <hr class="hr"> </center>
     <form action='Verify_Delete.php' method='POST'>
       <table class="table table-hover table-responsive">
+      <caption>ข้อมูลลูกค้าทั้งหมด</caption>
         <thead class="table-dark">
           <tr>
             <th scope="col">#</th>
@@ -48,7 +50,7 @@
               <td>$row[Sex]</td>
               <td>$row[Address]</td>
               <td>$row[Tel]</td>
-              <td><a href='Verify_Delete.php?id=$row[IDCust]'> <i class='bi bi-trash'></i></a>
+              <td><a href='Verify_Delete1.php?id=$row[IDCust]'> <i class='bi bi-trash'></i></a>
                   <a href='cust-one.php?id=$row[IDCust]'> <i class='bi bi-pencil'></i> </a></td>
             </tr>
             ";
