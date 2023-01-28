@@ -1,3 +1,12 @@
+<?php include "session.php" ?>
+<?php
+    $idcust = $_SESSION['custid'];
+    echo "<hr>";
+    echo "IDCUST: $idcust";
+    echo "<hr>";
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 

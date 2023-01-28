@@ -44,6 +44,12 @@
 
 
 
+                    $prices = $_POST['prices'];
+
+                    echo "size: ".count($prices)."<br>";
+
+                    // echo "PRICE : $prices";
+                    
                     $ids = $_POST['ids'];
 
                     $custid = $_POST['custid'];
@@ -67,18 +73,25 @@
 
                             echo ($ids[$i] . " ");
 
+                            echo "<hr>";
+
                             $pieces = explode(" ", $ids[$i]);
-                            echo $pieces[0]; // piece1
-                            echo $pieces[1]; // piece2
+                            // echo $pieces[0]; // piece1
+                            // echo $pieces[1]; // piece2
 
                             // expect : 'c001','c002','c003',
                             $tmp .= "'" . "$pieces[0]" . "'"  . ",";
+
                             $qtys .= "'" . "$pieces[1]" . "'"  . ",";
 
-                            echo "<hr>";
+                            $sql2 = " INSERT INTO Supplys VALUES ('$custid','$pieces[0]',$prices[$i]); ";
+
+                            echo "SQL2: $sql2 <br>";
 
 
                             echo "<hr>";
+
+
                         }
 
                         echo "<br> tmp : $tmp";
@@ -88,6 +101,8 @@
                         echo "<br> QTYS : $qtys";
 
                         $sql = " SELECT * FROM Stocks WHERE IDProduct IN ($tmp) ";
+
+                        $sql1 = " INSERT INTO Supplys VALUES ('c001','p003',25); ";
 
 
 

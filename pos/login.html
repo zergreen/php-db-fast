@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      function seePassword() {
+        let x = document.getElementById("my_password");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form method="post" action="authen.php">
+      <fieldset style="background-color: #eef1ff">
+        <legend><h1>Login:</h1></legend>
+
+        Username <br />
+        <input type="text" name="uname" value="admin" /> <br />
+        <br />
+        Password <br />
+        <input id="my_password" type="password" name="pwd" value="admin1234" />
+        <br />
+        <input type="checkbox" onclick="seePassword()" />Show Password <br />
+        <br />
+
+        <center><input type="submit" value="Login" /></center>
+      </fieldset>
+    </form>
+  </body>
+</html>

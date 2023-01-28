@@ -1,4 +1,4 @@
 <?php
-$newURL = "cust-login.php";
+$newURL = "home.php";
 header('Location: '.$newURL);
 ?>

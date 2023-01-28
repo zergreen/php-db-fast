@@ -21,5 +21,6 @@
         </h1>
         <img src="https://media.tenor.com/hRiPtsp-m0IAAAAM/the-simpsons-homer-simpson.gif" alt="">
       </center>
+      <a href="test-session.php">TEST-SESSION</a>
 </body>
 </html>

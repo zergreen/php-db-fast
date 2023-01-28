@@ -1,9 +1,8 @@
-<?php include "session.php" ?>
-
-<?php
+<?php session_start();
 $_SESSION['custid'] = $_POST['id'];
 echo $_SESSION['custid'];
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -32,17 +31,17 @@ echo $_SESSION['custid'];
             <h1>Customer - Product List&#128220;</h1>
             <hr class="hr">
         </center>
-        <form action="DELETE.php" method="POST">
-            <div class="d-flex justify-content-end"> <?php echo " <input type=button onclick=location.href='ADD.php?id=$_POST[id]' value=ADD > "; ?></div><br>
+        <form action="VERIFY_1.php" method="POST">
+            <div class="d-flex justify-content-end"> <?php echo " <input type=submit value=ADD> "; ?></div><br>
 
             <table class="table table-hover table-bordered table-striped text-center">
                 <caption>รายการรวมสินค้าของลูกค้า - รหัสลูกค้า <?php echo "$_POST[id]"; ?> </caption>
                 <thead class="table-dark">
                     <th>#</th>
+                    <th>ID</th>
                     <th>ชื่อสินค้า</th>
                     <th>ราคา/หน่วย</th>
                     <th>จำนวน</th>
-                    <th>QtyStock</th>
                 </thead>
                 <tbody>
                     <?php
@@ -57,16 +56,28 @@ echo $_SESSION['custid'];
                     INNER JOIN Supplys AS sup ON s.IDProduct=sup.IDProduct 
                     WHERE sup.IDCust='$id' ";
 
-                    $result = $conn->query($sql);
+                    $price = array();
+
+                    $sql3 = "SELECT * FROM Stocks";
+
+                    $result = $conn->query($sql3);
+
+                    $i = -1;
+
+                    include "Fruit.php";
+
+                    // $obj[10] = new Fruit();
+                    
 
                     while ($row = $result->fetch_assoc()) {
+                        $i++;
                         echo "
                             <tr>
-                            <td><input type=checkbox name=ids[] value=$row[ProductName] >
+                            <td><input type=checkbox name=ids[] value=$row[IDProduct]>
+                            <td>$row[IDProduct]
                             <td>$row[ProductName]
                             <td>$row[PricePerUnit]
-                            <td><input type=number value=$row[Qty] step=10 min=0 max=9999>
-                            <td>$row[StockQty]
+                            <td><input type=number name=ids[] value=0 step=10 min=0 max=9999>
                             </tr>
                             ";
                     }
@@ -82,6 +93,7 @@ echo $_SESSION['custid'];
                 <div class="p-2 bd-highlight"><input type="reset" value="RESET"></div>
                 <div class="p-2 bd-highlight"><input type="submit" value="UPDATE"></div>
                 <div class="p-2 bd-highlight"><input type="submit" value="DELETE"></div>
+                <?php echo "  <input type='hidden' name='custid' value='$id'> " ?>
             </div>
 
         </form>

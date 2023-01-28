@@ -57,7 +57,7 @@
                             <td>$row[IDProduct]
                             <td>$row[ProductName]
                             <td>$row[PricePerUnit]
-                            <td><input type=number value=$row[StockQty] step=10 min=0 max=9999>
+                            <td><input type=number value=$row[StockQty] name=prices[] step=10 min=0 max=9999>
                             </tr>
                             ";
                     }
